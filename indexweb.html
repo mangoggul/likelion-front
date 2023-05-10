@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "view transition" content ="same-origin"/>
+	<title>Navigation, Section, Footer 예제</title>
+	<style>
+		
+		html{
+			scroll-behavior: smooth;
+		}
+		* {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+				
+        }
+        .container {
+                scroll-snap-type: y mandatory;
+                height: 100vh;
+                overflow-y: scroll;
+        }
+        section {
+                scroll-snap-align: start;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: x-large;
+        }
+       
+        #HOME{
+			color: #fff;
+
+			text-decoration: none;
+			font-size: 1.2rem;
+			font-weight: bold;
+			transition: all 0.5s ease-in-out;
+			background-image: url(../tree.jpg);
+            background-size: cover;
+			display: flex;
+			flex-direction: column;
+		}
+		#FAQ{
+			color: #fff;
+			text-decoration: none;
+			font-size: 1.2rem;
+			font-weight: bold;
+			transition: all 0.5s ease-in-out;
+			background-image: url(../faq_logo.png);
+            background-size: cover;
+		}
+		#SNS{
+			color: #fff;
+			text-decoration: none;
+			font-size: 1.2rem;
+			font-weight: bold;
+			transition: all 0.5s ease-in-out;
+			background-image: url(../git_logo.png);
+            background-size: cover;
+		}
+		nav {
+			width: 100%;
+			position: fixed;
+			background-color: white;
+			color: black;
+			padding: 20px;
+			box-shadow: 0px 0px 8px rgba(0,0,0,0.9);
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: flex-end;
+			
+		}
+		nav ul li {
+			margin-right: 40px;
+		}
+		nav ul li a {
+			color: black;
+			text-decoration: none;
+			font-size: 1.2rem;
+			font-weight: bold;
+			transition: all 0.2s ease-in-out;
+		}
+		nav ul li a:hover {
+			color: rgb(153, 245, 199);
+		}
+		nav ul > li {
+			font-size: 1.2rem;
+			font-weight: bold;
+			color: white;
+		}
+		.logo{
+			position: absolute;
+			left: 20px;
+			transition: all 0.2s ease-in-out;
+		}
+		footer {
+			background-color: white;
+			color: black;
+			padding: 20px;
+			text-align: center;
+			
+		}
+		.main_img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+		}
+		.scroll-container{
+			scroll-behavior: smooth;
+  			display: block;
+  			text-align:center;
+  			margin:auto;
+  			overflow-y: scroll;
+			width: 350px;
+ 	 		height: 250px;
+			
+		}
+		
+		.returnLink h1:hover{
+			color: black;
+			transition: all 0.5s ease-in-out;
+			padding: 1rem 2rem;
+			background-color: white;
+		}
+		h1{
+			font-size: 60px;
+		}
+		h2{
+			display: block;
+		}
+
+	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="logo"><a href="https://www.instagram.com/?next=%2F"><img src="../instagram-logo-svgrepo-com.png" width="30px" height="30px"></a></li>
+			
+			<li><a href = "FAQ.html">FAQ</a></li>
+			<li><a href = "SNS.html">SNS</a></li>
+		</ul>
+	</nav>
+	
+	<div class="scroll_container">
+		<div class = "returnLink">
+			<section id ="HOME">
+				<h1>LEE . CHANG KYU</h1>
+				<h2>front-end</h2>
+			</section>
+		</div>
+	</div>
+	
+</body>
+</html>

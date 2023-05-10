@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>자기소개</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.1.12.4.js" type=text/javascript></script>
+    <script src="plugins/bxslider/js/jquery.bxslider.js" type="text/javascript"></script>
+    <link href="plugins/web-fonts-with-css/css/all.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Rubik+Pixels&family=Sigmar&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function () {
+            $(".slider").bxSlider({
+                controls: false,
+                pager: false,
+                auto: true,
+                pause: 3000
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="scroll-container">
+        <section>
+            <div class="overlay"></div>
+            <div class="slider">
+                <div class="background_01"></div>
+                <div class="background_02"></div>
+                <div class="background_03"></div>
+            </div>
+            <div class="content">
+                <header id="header">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="index.html"><b>Home</b></a></li>
+                            <li><a href="#info"><b>About</b></a></li>
+                            </li>
+                            <li><a href="#info2"><b>LifeStyle</b></a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <p class="content_name">Kim, Beom Su</p>
+                <p class="content_job">I'm Student & Frontend Dev aspirant</p>
+                <div class="content_sns">
+                    <ul class="content_list">
+                        <li>
+                            <a href="https://www.instagram.com/beomuda_/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/indigchi1d" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://en.sejong.ac.kr/eng/index.do" target="_blank">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="info">
+            <div>
+                <h1><strong>About</strong></h1>
+                <article>
+                    <section class="a1">
+                        <div class="pic_01">
+                            <img src="../images/selfie_1.png">
+                        </div>
+                        <div class="my_info_box">
+                            <p>
+                                Name: 김범수<br><br>
+                                Birth: 2000-04-23<br><br>
+                                소속: 세종대학교<br><br>
+                                Phone: <a href='tel:+82 10-6325-6924'>010-6325-6924</a><br><br>
+                                E-mail: diego97523@gmail.com
+                            </p>
+                        </div>
+                    </section>
+                    <section class="a2">
+                        <h3>Activities</h3>
+                        <div>
+                            <p>
+                                <ul>
+                                    <li>멋쟁이사자처럼🦁 11기 프론트엔드 2023.3.19 ~</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </section>
+        <section id="info2">
+            <div>
+                <h1><strong>LifeStyle</strong></h1>
+                <article class="ls">
+                    <h2>
+                        <span class="light">Hobby</span>
+                        <span>Workout!</span>
+                        <span class="light">Things I Like</span><br>
+                        <span>Clothes, Soccer, game</span>
+                        <span class="light">Coding skill</span>
+                        <span>Html, CSS, C, Python</span>
+                    </h2>
+                </article>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
